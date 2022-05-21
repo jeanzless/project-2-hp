@@ -1,20 +1,11 @@
-// function App() {
-//   return <h1>
-//     Hey World.
-//   </h1>
-// }
 
-///Week 11 01
-
-
-
-// ! Destructuring import syntax!
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import React from 'react'
 
 import Home from "./components/Home"
-import About from "./components/About"
-import Products from "./components/Products"
-import SingleProduct from "./components/Product"
+import Characters from "./components/Characters"
+import SingleCharacter from "./components/ShowCharacter"
+// import Favorites from "./components/Favorites"
 import Navbar from "./components/Navbar"
 
 function App() {
@@ -28,9 +19,9 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/product/:productName" element={<SingleProduct />} />
+        <Route path="/characters" element={<Characters />} />
+        <Route path="/characters/:showcharacter" element={<SingleCharacter />} />
+        {/* <Route path="/favorites" element={<Favorites />} /> */}
       </Routes>
     </Router>
   )

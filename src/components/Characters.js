@@ -10,7 +10,7 @@
 
 //   React.useEffect(() => {
 //     async function fetchCharacters() {
-//       const resp = await fetch("http://hp-api.herokuapp.com/api/characters/")
+//       const resp = await fetch("https://cryptic-everglades-76066.herokuapp.com/http://hp-api.herokuapp.com/api/characters/")
 //       const countriesData = await resp.json()
 //       updateCharacters(charactersData)
 //     }
@@ -42,7 +42,7 @@ function Characters(){
 
   React.useEffect(() => {
     async function fetchCharacter() {
-      const resp = await fetch("http://hp-api.herokuapp.com/api/characters/")
+      const resp = await fetch("https://cryptic-everglades-76066.herokuapp.com/http://hp-api.herokuapp.com/api/characters/")
       const data = await resp.json()
       console.log(data)
       setPotterCharacter(data)
